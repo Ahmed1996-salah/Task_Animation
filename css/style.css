@@ -8,7 +8,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(../images/pic2.jpg);
+    background-image: url(../images/BG.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,74 +17,111 @@ header {
 header .title {
     position: relative;
     top: 30px;
-    color: #fff;
+    color: #280d00;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 50px;
     font-weight: bold;
-
 }
+
+header .change {
+    color: #ebe3e3;
+}
+
+header h6 {
+    text-transform: capitalize;
+}
+
 
 header .line {
     position: relative;
     top: 40px;
     display: block;
-    width: 250px;
+    width: 140px;
     margin: auto;
     height: 5px;
-    background-color: #64f769;
-
+    background-color: #fbe5db;
 }
 
 .pic-1 {
     position: absolute;
     top: 120px;
-    background-image: url(../Images/pic5.jpg);
+    background-image: url(../Images/car1.png);
     background-size: cover;
     width: 350px;
     height: 185px;
     animation-name: pic1;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-timing-function: ease;
-    animation-timing-function: ease-in;
-    animation-timing-function: ease-out;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 .pic-2 {
     position: absolute;
     top: 46%;
-    background-image: url(../Images/pic8.jpg);
+    background-image: url(../Images/car2.png);
     background-size: cover;
     width: 350px;
     height: 185px;
     animation-name: pic2;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-timing-function: ease;
-    animation-timing-function: ease-in;
-    animation-timing-function: ease-out;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation-delay: 8s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 .pic-3 {
     position: absolute;
     top: 75%;
-    background-image: url(../Images/pic3.jpg);
+    background-image: url(../Images/car3.png);
     background-size: cover;
     width: 350px;
     height: 180px;
     animation-name: pic3;
-    animation-duration: 5.5s;
-    animation-timing-function: linear;
-    animation-timing-function: ease;
-    animation-timing-function: ease-in;
-    animation-timing-function: ease-out;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation-delay: 15s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.pic-4 {
+    position: absolute;
+    top: 120px;
+    right: 0%;
+    background-image: url(../Images/car4.png);
+    background-size: cover;
+    width: 350px;
+    height: 185px;
+    animation-name: pic4;
+    animation-delay: 5s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.pic-5 {
+    position: absolute;
+    top: 46%;
+    right: 0%;
+    background-image: url(../Images/car5.png);
+    background-size: cover;
+    width: 350px;
+    height: 185px;
+    animation-name: pic5;
+    animation-delay: 11s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.pic-6 {
+    position: absolute;
+    top: 75%;
+    right: 0%;
+    background-image: url(../Images/car6.png);
+    background-size: cover;
+    width: 350px;
+    height: 180px;
+    animation-name: pic6;
+    animation-delay: 19s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -103,38 +140,79 @@ header .line {
     cursor: pointer;
 }
 
+.pic-4:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.pic-5:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.pic-6:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
 
 
 @keyframes pic1 {
     0% {
-        left: 0px;
+        right: 1000px;
     }
 
     100% {
-        left: 1000px;
+        right: 0px;
     }
 }
 
 @keyframes pic2 {
     0% {
-        left: 500px;
-    }
-
-    50% {
-        left: 0px;
+        right: 1000px;
     }
 
     100% {
-        left: 1000px;
+        right: 0px;
     }
 }
 
 @keyframes pic3 {
+    0% {
+        right: 1000px;
+    }
+
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes pic4 {
+    0% {
+        left: 1000px;
+    }
+
     100% {
         left: 0px;
     }
+}
 
+@keyframes pic5 {
     0% {
         left: 1000px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes pic6 {
+    0% {
+        left: 1000px;
+    }
+
+    100% {
+        left: 0px;
     }
 }
